@@ -1,0 +1,30 @@
+:root {
+	--app-background: #0b1020;
+	--app-surface: #121a2f;
+	--app-primary: #7c3aed;
+	--app-primary-hover: #8b5cf6;
+	--app-accent: #14b8a6;
+	--app-text: #f8fafc;
+	--app-secondary-text: #94a3b8;
+	--app-border: #263452;
+	color-scheme: dark;
+}
+
+body {
+	min-width: 320px;
+	min-height: 100vh;
+	color: var(--app-text);
+	background-color: var(--app-background);
+	background-image:
+		radial-gradient(ellipse at 12% 0%, rgb(124 58 237 / 13%), transparent 34rem),
+		radial-gradient(ellipse at 92% 28%, rgb(20 184 166 / 7%), transparent 30rem);
+	background-attachment: fixed;
+	font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+	color: var(--app-text);
+	background-color: var(--app-primary);
+}
